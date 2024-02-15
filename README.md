@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/8w8e1teoi22edg1q?svg=true)](https://ci.appveyor.com/project/Hav2808/classes-inheritances-2)
+
 # Домашнее задание к лекции «Классы, наследование»
 
 **Важно**: каждая задача выполняется в виде отдельного проекта с собственным GitHub репозиторием.
