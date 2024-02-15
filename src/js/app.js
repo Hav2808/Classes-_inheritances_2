@@ -1,6 +1,6 @@
-const {Game,  GameSavingData, readGameSaving, writeGameSaving } = require('./game');
-
-const game = new Game();
-game.start();
+// TODO: write your code here
+import sum from './basic';
 
 console.log('worked');
+
+console.log(sum([1, 2]));
