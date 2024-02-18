@@ -1,4 +1,5 @@
 import Character from '../character.js';
+import Bowman from '../bowman.js';
 
 test('New character with invalid name (too short)', () => {
     expect(
@@ -18,7 +19,7 @@ test('Invalid character type throws an error', () => {
 
 
 test('Inflict damage to character', () => {
-    const testChar = new Character('Bowy', 'Bowman', 25, 25);
+    const testChar = new Bowman('Bowy', 'Bowman', 25, 25);
     testChar.damage(50);
     expect(testChar).toEqual({
         name: 'Bowy',
@@ -31,14 +32,14 @@ test('Inflict damage to character', () => {
 });
 
 test('The value of health cannot be negative', () => {
-    const testChar = new Character('Bowy', 'Bowman', 25, 25);
+    const testChar = new Bowman('Bowy', 'Bowman', 25, 25);
     testChar.health = 0;
     testChar.damage(50);
     expect(testChar.health).toEqual(0);
 });
 
 test('Go to the next level', () => {
-    const testChar = new Character ('Bowy', 'Bowman', 25, 25);
+    const testChar = new Bowman ('Bowy', 'Bowman', 25, 25);
     testChar.levelUp();
     expect(testChar).toEqual({
         name: 'Bowy',
